@@ -59,6 +59,6 @@ export default defineConfig(({ command }) => {
       },
     },
 
-    base: '/cookie-crunch',
+    base: '/cookie-crunch-classic',
   };
 });
