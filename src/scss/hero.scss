@@ -1,0 +1,124 @@
+.hero_section {
+  width: 100%;
+  max-width: 9999px;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: url(../img/hero/phone_mobile.png) no-repeat right top 80px,
+    url(../img/hero/cookies_mobile.png) no-repeat right top 419px,
+    linear-gradient(52.03deg, rgb(0, 0, 0) -0.757%, rgb(157, 36, 96) 100%);
+  @include media(desktop) {
+    background: url(../img/hero/hero-cookies.png) no-repeat right 154px top
+        134px,
+      linear-gradient(52.03deg, rgb(0, 0, 0) -0.757%, rgb(157, 36, 96) 100%);
+  }
+}
+
+.hero_container {
+  padding-top: 212px;
+  padding-bottom: 45px;
+  @include media(desktop) {
+    padding-top: 250px;
+  }
+}
+
+.google_light {
+  margin-top: 48px;
+  width: 242px;
+  height: 87px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding: 12;
+
+  border-radius: 10px;
+  border: 1px solid black;
+
+  background: rgb(255, 255, 255);
+  @include media(desktop) {
+    margin-top: 56px;
+  }
+}
+.google_btn_text {
+  padding-top: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: rgb(0, 0, 0);
+}
+.google_btn_text_small {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+
+  text-transform: uppercase;
+}
+.google_btn_text_large {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.hero_title {
+  font-family: DM Serif Display;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 55px;
+  @include media(desktop) {
+    width: 526px;
+    font-family: DM Serif Display;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 99px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+.hero_title_yellow {
+  background: linear-gradient(to left, #e9c001, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero_disclaimer {
+  margin-top: 104px;
+  color: rgb(255, 255, 255);
+  font-family: DM Serif Display;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0%;
+  text-align: left;
+  @include media(desktop) {
+    margin-top: 8px;
+    margin-left: 732px;
+
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 49px;
+  }
+}
+.hero_disclaimer_text {
+  margin-top: 16px;
+  color: rgb(255, 255, 255);
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  @include media(desktop) {
+    margin-top: 24px;
+    margin-left: 732px;
+    width: 550px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}

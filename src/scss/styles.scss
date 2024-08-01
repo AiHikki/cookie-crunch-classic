@@ -1,0 +1,30 @@
+@import './header.scss';
+@import './section.scss';
+@import './container.scss';
+@import './footer.scss';
+@import './about.scss';
+@import './advantages.scss';
+@import './benefits.scss';
+@import './faq.scss';
+@import './gallery.scss';
+@import './global.scss';
+@import './hero.scss';
+@import './how-to-play.scss';
+@import './privacy-policy-page.scss';
+@import './terms.scss';
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #fff;
+  background-color: #000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}

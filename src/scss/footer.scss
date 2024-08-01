@@ -1,0 +1,191 @@
+.footer_container {
+  position: relative;
+  background-image: url(../img/footer/cookie.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 82px;
+  background-position: -10px -10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include media(desktop) {
+    background-position: left top;
+    background-size: 162px;
+  }
+}
+
+.footer_logo {
+  margin-top: 16px;
+  @include media(desktop) {
+    margin-top: 48px;
+  }
+}
+.footer_game_title {
+  color: rgb(255, 255, 255);
+  font-family: DM Serif Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 8px;
+  @include media(desktop) {
+    margin-top: 16px;
+  }
+}
+.footer_content_container {
+  margin-top: 109px;
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 310px;
+  @include media(desktop) {
+    margin-top: 124px;
+    // margin-left: 87px;
+    // margin-right: 72px;
+    gap: 340px;
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+.footer_line {
+  position: absolute;
+  margin-top: 166px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #ff3cac, #562b7c, #2b86c5);
+  @include media(desktop) {
+    margin-top: 199px;
+  }
+}
+.footer_content_text {
+  color: rgb(255, 255, 255);
+
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  &:hover {
+    color: #e9c001;
+  }
+  &:focus {
+    color: #e9c001;
+  }
+
+  @include media(desktop) {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+.rights {
+  margin-top: 80px;
+  margin-bottom: 16px;
+  @include media(desktop) {
+    margin: 0;
+    margin-left: 50px;
+    order: 2;
+  }
+}
+.privacy {
+  @include media(desktop) {
+    order: 1;
+  }
+}
+.terms {
+  @include media(desktop) {
+    order: 3;
+  }
+}
+
+.elipse_1 {
+  /* Ellipse 4 */
+  position: absolute;
+  width: 113px;
+  height: 135px;
+  left: -34px;
+  top: 200px;
+  filter: blur(80px);
+  background: rgb(157, 36, 96);
+  @include media(desktop) {
+    bottom: 0px;
+  }
+}
+.elipse_2 {
+  /* Ellipse 4 */
+  position: absolute;
+  width: 85px;
+  height: 102px;
+  right: 50px;
+  top: -64px;
+  filter: blur(80px);
+  background: rgb(157, 36, 96);
+}
+.saphire_1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 61px;
+  top: 14px;
+  background: url(../img/footer/saphire.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 24px;
+  filter: blur(1px);
+  @include media(desktop) {
+    width: 62px;
+    height: 62px;
+    background-size: 62px;
+    right: 203px;
+    top: 89px;
+  }
+}
+.saphire_2 {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  right: 26px;
+  top: 52px;
+  background: url(../img/footer/ruby.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 19px;
+  filter: blur(1px);
+  @include media(desktop) {
+    width: 42px;
+    height: 42px;
+    background-size: 42px;
+    right: 343px;
+    top: 47px;
+  }
+}
+.saphire_3 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: -1px;
+  top: 81px;
+  background: url(../img/footer/amethyst.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 22px;
+  filter: blur(1px);
+  @include media(desktop) {
+    width: 32px;
+    height: 322px;
+    background-size: 32px;
+    top: 102px;
+  }
+}

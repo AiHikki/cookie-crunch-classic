@@ -1,0 +1,51 @@
+.galery_title {
+  color: rgb(255, 255, 255);
+  font-family: DM Serif Display;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+
+  text-align: center;
+  margin-bottom: 32px;
+  @include media(desktop) {
+    font-size: 64px;
+
+    line-height: 88px;
+  }
+}
+.gallery_container {
+  text-align: center;
+}
+.galery_btn {
+  color: rgb(255, 255, 255);
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+
+  /* CTA */
+  position: static;
+  width: 275px;
+  height: 60px;
+  /* Auto layout */
+  display: flex;
+  display: inline-block;
+
+  padding: 10px;
+
+  /* Inside Auto Layout */
+  margin-top: 32px;
+  margin-bottom: 150px;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    rgb(255, 60, 172),
+    rgb(86, 43, 124) 52%,
+    rgb(43, 134, 197) 100%
+  );
+  @include media(desktop) {
+    margin-top: 48px;
+    margin-bottom: 120px;
+  }
+}

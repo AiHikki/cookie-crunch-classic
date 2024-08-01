@@ -1,0 +1,97 @@
+.faq__title {
+  text-align: center;
+
+  @include media(desktop) {
+    margin-bottom: 72px;
+  }
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media(desktop) {
+    gap: 16px;
+  }
+}
+
+.faq__list-item div {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(#000, #000),
+    linear-gradient(90deg, #ff3cac 0%, #562b7c 52%, #2b86c5 100%);
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.faq__list-item div h3 {
+  padding: 10px;
+  background: linear-gradient(90deg, #ffffff 0%, #999999 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  @include font(18, 24);
+  font-family: 'DM Serif Display', serif;
+
+  @include media(desktop) {
+    @include font(20, 26);
+  }
+}
+
+.faq__list-item p {
+  background: linear-gradient(90deg, #ff057c 0%, #7c64d5 48%, #4cc3ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  padding-left: 10px;
+  @include font(16, 20);
+
+  @include media(desktop) {
+    @include font(20, 26);
+  }
+}
+
+.faq__list-item p::before {
+  content: '•';
+  color: #ff057c;
+  margin-right: 10px;
+}
+
+.faq__list-item:nth-child(even) div {
+  background-image: linear-gradient(#000, #000),
+    linear-gradient(90deg, #d558c8 0%, #24d292 100%);
+}
+
+.faq__list-item:nth-child(even) p {
+  background: linear-gradient(90deg, #d558c8 0%, #24d292 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@include media(desktop) {
+  .faq-section {
+    background-image: url('/img/faq/desktop/chat.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: -8%;
+  }
+
+  .faq__list-item {
+    width: 636px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq__list-item:nth-child(even) {
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,38 @@
+.benefits-section {
+  background-image: url('/img/benefits/mobile/benefits.png');
+  background-repeat: no-repeat;
+  min-height: 810px;
+  background-size: 621px;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-origin: content-box;
+
+  @include media(desktop) {
+    background-size: 1151px;
+    background-image: url('/img/benefits/desktop/benefits.png');
+    min-height: 1125px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @include media(mobile) {
+      background-image: url('/img/benefits/mobile/benefits@2x.png');
+    }
+    @include media(desktop) {
+      background-image: url('/img/benefits/desktop/benefits@2x.png');
+    }
+  }
+}
+
+@include media(desktop) {
+  .benefits__heading {
+    width: 550px;
+  }
+}
+
+.benefits__desc {
+  @include font(18, 24);
+
+  @include media(desktop) {
+    @include font(24, 32);
+  }
+}

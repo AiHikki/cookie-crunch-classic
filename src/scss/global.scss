@@ -1,0 +1,9 @@
+h2 {
+  font-family: 'DM Serif Display', serif;
+  @include font(32, 44);
+
+  @include media(desktop) {
+    @include font(64, 88);
+  }
+  margin-bottom: 32px;
+}

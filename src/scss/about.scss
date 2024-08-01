@@ -1,0 +1,47 @@
+.about-section {
+  background-image: url('/img/about/mobile/game.png');
+  background-repeat: no-repeat;
+  min-height: 825px;
+  background-size: 321px;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-origin: content-box;
+
+  @include media(desktop) {
+    background-size: 733px;
+    background-image: url('/img/about/desktop/game.png');
+    min-height: 606px;
+    background-position-x: 72px;
+    background-position-y: center;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @include media(mobile) {
+      background-image: url('/img/about/mobile/game@2x.png');
+    }
+    @include media(desktop) {
+      background-image: url('/img/about/desktop/game@2x.png');
+    }
+  }
+}
+
+@include media(desktop) {
+  .about__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@include media(desktop) {
+  .about__heading {
+    width: 550px;
+  }
+}
+
+.about__desc {
+  @include font(18, 24);
+
+  @include media(desktop) {
+    @include font(24, 32);
+  }
+}

@@ -1,0 +1,45 @@
+.advantages__title {
+  text-align: center;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.advantages__list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+  border-image-source: linear-gradient(
+    90deg,
+    #ff3cac 0%,
+    #562b7c 52%,
+    #2b86c5 100%
+  );
+  border-image-slice: 1;
+
+  &:nth-child(1) {
+    border-image-source: linear-gradient(
+      90deg,
+      #7742b2 0%,
+      #f180ff 52%,
+      #fd8bd9 100%
+    );
+  }
+
+  &:nth-child(4) {
+    border-image-source: linear-gradient(90deg, #d558c8 0%, #24d292 100%);
+  }
+}
+
+.advantages__list-item img {
+}
+
+.advantages__list-item p {
+  @include font(16, 21);
+}
