@@ -16,6 +16,7 @@ new Splide('#slider1', {
   fixedHeight: 529,
   breakpoints: {
     1439: {
+      start: 2,
       perPage: 3,
       gap: 16,
       fixedWidth: 220,
