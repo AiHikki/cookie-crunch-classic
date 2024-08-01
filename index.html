@@ -14,9 +14,9 @@
     />
     
     <script type="module" crossorigin src="/cookie-crunch-classic/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/cookie-crunch-classic/assets/burger-65febf43.js">
+    <link rel="modulepreload" crossorigin href="/cookie-crunch-classic/assets/burger-fe723789.js">
     <link rel="modulepreload" crossorigin href="/cookie-crunch-classic/assets/vendor-688b6f4b.js">
-    <link rel="stylesheet" href="/cookie-crunch-classic/assets/burger-685e908f.css">
+    <link rel="stylesheet" href="/cookie-crunch-classic/assets/burger-8ec15a98.css">
     <link rel="stylesheet" href="/cookie-crunch-classic/assets/index-46aa9bb7.css">
   </head>
   <body>
@@ -36,24 +36,24 @@
       <nav>
         <ul class="nav_list">
           <li><a class="active" href="/cookie-crunch-classic">Home</a></li>
-          <li><a href="#">Benefits</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">How to play</a></li>
-          <li><a href="#">Advantages</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#how-to-play">How to play</a></li>
+          <li><a href="#advantages">Advantages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
         </ul>
       </nav>
     </div>
     <nav>
       <ul class="menu">
         <li><a class="menuItem" href="#">Home</a></li>
-        <li><a class="menuItem" href="#">Benefits</a></li>
-        <li><a class="menuItem" href="#">About</a></li>
-        <li><a class="menuItem" href="#">FAQ</a></li>
-        <li><a class="menuItem" href="#">How to play</a></li>
-        <li><a class="menuItem" href="#">Advantages</a></li>
-        <li><a class="menuItem" href="#">Gallery</a></li>
+        <li><a class="menuItem" href="#benefits">Benefits</a></li>
+        <li><a class="menuItem" href="#about">About</a></li>
+        <li><a class="menuItem" href="#faq">FAQ</a></li>
+        <li><a class="menuItem" href="#how-to-play">How to play</a></li>
+        <li><a class="menuItem" href="#advantages">Advantages</a></li>
+        <li><a class="menuItem" href="#gallery">Gallery</a></li>
       </ul>
     </nav>
 
@@ -82,17 +82,20 @@
       <span class="hero_title_yellow">Crunch</span>
       Classic
     </h1>
-    <a
+    <div class="hero_btn_wrapper">
+      <a class="btn_link"
       href="https://play.google.com/store/search?q=cookie+crunch+classic&c=apps&hl=pl"
       target="_blank"
       ><button type="button" class="google_light">
-        <img src="/cookie-crunch-classic/assets/logos_google-play-icon-a0cf92ef.jpg" alt="" />
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABHNCSVQICAgIfAhkiAAAA8NJREFUaIHN2k9IFFEAx/HfW0fMbUuL/qxBNB6E6iASW10Cx9rqWrSXKIgw6uyhokvOHKJLhRTeExIlpDp0c8sRC6IWDDqkRriJVmakqLnqTr0Ou89G3Vnfm3mz7ve0O868Nx9md2bUIbAV6YhpILQ5+1YDJUb2tZk422WiiCPsRaTzTA8AzXFNSozE2S7d/11yFwE4EPaKFEQiHTHd9nHir8hAAWVxj+pqS0KbI51naKQjpkvdI5eRo7dm6fy2R8nFim7V00jrfITI0VuzFACsjf3v58ItdZ5HXCfQEgQArPIBzO26LWfkAoOWQVize64l/yrjqpQZCgTKCQGAVPhBb3pjol7aTD6DHCGADxjAN1BeCABIOaPlSjJoTQgALGx9ioUtz2TN+b/svZwMEBcE8BEDSAEpvCuW/TqNktQ+eadne9lbpHS3AgBm6XHLFB0iILKyktqL4NcbonNw1VrxGiBoBkFPOq70pLsVTWR7IQiQwWz+3IbAgjolum2udgd+J1srXuNA6U/7Yk0UJAxhhUaNSq+Y3YHfycdb4+oKhD1ukGsIkMGUTZ5ytS1DcK6+BHJawRMEyJwERDGNwUEIIOxp6bhC092KvvIHniGAGKYxOIhLwQFvExI0Z0EaWyQFAvBhpCDsEfSwo8N9QeTN6cIpHWGPooH7gshbrgtnjtOr7DTpR4RllQ/gT/lH3FOv+o0AIPE7srLar/N42nUftd/m/ZrCnukLJDbchpv9TQCAmfYaWCMhP6ZZlnRIbLgNseGHy5bNtNdg/lVY9lT/ozCkQnIhWKm+Kn8wFEbpcUveRysfgiUdk0HogMDvI/niQbBSfVUAgA1Hvruf0AZgeYbc7G/C/sn3Qtuk+qqQ/rIJm859EpssB4Dl6aPlBsGyRkKYaa8BTZWsPQCFURq1iBMCcAmpnh6a6nzZ4BrBskZCmGqprXPEcABYwpDq6aGp24krlaLb5WsVRgDAErpFOTn6JHlx6IEqtJcCBU+MNpUdmKgUAbC4v+w+I0xCqBG6/s10OwAXJHt6Vd1OkieTEGpsjydMrwOtCRG5RggkDcDKC/EBIR3AcoR4uUbkyDcAaxUkPDeWvDx4R5WE8B3AWgYJz40lW96cVyWMWzAAawlyeKK3t+mD7vWfOgUHsBRADoISYuyMv9Wl7JWLlEuDd9uiY88vuB1gvQEsMhGNaJQSx7+pOlUsABYBgB/HDnI/VFNsANbSY07j0UM6oXkfrjF3vHjXUIB9chWxvxmPHtIBgFBaj8wRMgmhBgCsx5lIpH8XdeUKhzfAfAAAAABJRU5ErkJggg==" alt=""/>
         <div class="google_btn_text">
           <p class="google_btn_text_small">Get it on</p>
           <h3 class="google_btn_text_large">Google Play</h3>
         </div>
       </button></a
     >
+    </div>
+   
     <h2 class="hero_disclaimer">Disclaimer</h2>
     <p class="hero_disclaimer_text">
       WINSTARTODAY.COM IS A PLATFORM FOR HAVING FUN. THE PROBABILITY OF WINNING
@@ -380,7 +383,7 @@
       <a
         href="https://play.google.com/store/search?q=cookie+crunch+classic&c=apps&hl=pl"
         target="_blank"
-        ><button class="galery_btn" type="button">Download Now</button></a
+        ><button class="galery_btn" type="button"><div class="gallery_btn_wrapper"></div>Download Now</button></a
       >
     </section>
   </div>
