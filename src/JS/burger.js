@@ -15,4 +15,7 @@ function toggleMenu() {
     closeIcon.classList.add('hidden');
   }
 }
+document.querySelectorAll('.menuItem').forEach(item => {
+  item.addEventListener('click', toggleMenu);
+});
 window.toggleMenu = toggleMenu;
