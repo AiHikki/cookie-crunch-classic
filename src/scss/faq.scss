@@ -83,6 +83,11 @@
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: -8%;
+    background-size: 390px;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('/img/faq/desktop/chat@2x.png');
+    }
   }
 
   .faq__list-item {
