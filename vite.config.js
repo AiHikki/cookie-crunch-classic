@@ -32,7 +32,7 @@ export default defineConfig(({ command }) => {
       injectHTML(),
       FullReload(['./src/**/**.html']),
       ViteImageOptimizer({
-        exclude: /^sprite.svg$/,
+        exclude: /^symbol-defs.svg$/,
         png: {
           quality: 60,
         },
@@ -46,10 +46,10 @@ export default defineConfig(({ command }) => {
           quality: 60,
         },
       }),
-      svgSpritePlugin({
-        include: '/src/img/svg/symbol-defs.svg',
-        symbolId: 'icon-[name]',
-      }),
+      // svgSpritePlugin({
+      //   include: '/src/img/svg/symbol-defs.svg',
+      //   symbolId: 'icon-[name]',
+      // }),
     ],
     css: {
       preprocessorOptions: {
