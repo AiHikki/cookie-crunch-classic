@@ -101,9 +101,7 @@ a {
   cursor: pointer;
   outline: none;
   color: white;
-  :focus {
-    color: #e9c001;
-  }
+  
   @include media(desktop) {
     display: none;
   }
@@ -111,6 +109,10 @@ a {
 
 .hamburger svg {
   fill: white;
+  
+}
+.hamburger:active svg {
+  fill: #e9c001;
 }
 .closeIcon {
   width: 38px;
