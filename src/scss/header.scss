@@ -33,14 +33,6 @@
 }
 .nav_list li {
   :hover {
-    color: #e9c001;
-  }
-  // :focus {
-  //   color: #e9c001;
-  // }
-}
-a {
-  &.active {
     position: relative;
 
     &::after {
@@ -52,6 +44,17 @@ a {
       height: 2px;
       background-color: #e9c001;
     }
+   
+  }
+  &:active {
+    color: #e9c001;
+  }
+  
+}
+a {
+  &.active {
+    color: #e9c001;
+    
   }
 }
 .nav_container {

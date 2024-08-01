@@ -74,9 +74,19 @@
   letter-spacing: 0%;
   text-align: center;
   &:hover {
-    color: #e9c001;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: #e9c001;
+    }
   }
-  &:focus {
+  &:active {
     color: #e9c001;
   }
 
