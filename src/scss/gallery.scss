@@ -23,17 +23,15 @@
   font-weight: 400;
   line-height: 26px;
 
-  /* CTA */
-  position: static;
+  position: relative;
   width: 275px;
   height: 60px;
-  /* Auto layout */
+
   display: flex;
   display: inline-block;
 
   padding: 10px;
 
-  /* Inside Auto Layout */
   margin-top: 32px;
   margin-bottom: 150px;
   border-radius: 10px;
@@ -44,11 +42,37 @@
     rgb(86, 43, 124) 52%,
     rgb(43, 134, 197) 100%
   );
+
   @include media(desktop) {
     margin-top: 48px;
     margin-bottom: 120px;
   }
 }
+.galery_btn:hover {
+  background: none;
+  color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 60, 172),
+    rgb(86, 43, 124) 52%,
+    rgb(43, 134, 197) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gallery_btn_wrapper {
+  z-index: -999;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: white;
+  box-sizing: border-box;
+
+  border-radius: 10px;
+}
 .splide {
-margin-bottom: 0;
+  margin-bottom: 0;
 }
