@@ -16,6 +16,7 @@
 .gallery_container {
   text-align: center;
 }
+
 .galery_btn {
   color: rgb(255, 255, 255);
   font-family: DM Sans;
@@ -48,6 +49,7 @@
     margin-bottom: 120px;
   }
 }
+
 .galery_btn:hover {
   background: none;
   color: transparent;
@@ -57,22 +59,20 @@
     rgb(86, 43, 124) 52%,
     rgb(43, 134, 197) 100%
   );
+  border: rgb(86, 43, 124) 2px solid;
+
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.gallery_btn_wrapper {
-  z-index: -999;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+.galery_btn:active {
   background: white;
-  box-sizing: border-box;
 
-  border-radius: 10px;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-text-fill-color: #562b7c;
 }
+
 .splide {
   margin-bottom: 0;
 }
