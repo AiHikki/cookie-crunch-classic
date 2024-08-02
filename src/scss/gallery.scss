@@ -26,12 +26,18 @@
   background-clip: padding-box, border-box;
   border-radius: 10px;
   border: 1px solid transparent;
+
+  @include media(desktop) {
+    width: 275px;
+    margin: 48px auto 0 auto;
+  }
 }
 
 .gallery_btn {
   display: block;
   padding-top: 17px;
   padding-bottom: 17px;
+  @include font(20, 26);
 }
 
 .gallery_btn-wrapper:hover {

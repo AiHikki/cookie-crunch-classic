@@ -1,5 +1,10 @@
-.footer_container {
+footer {
   margin-top: 40px;
+  @include media(desktop) {
+    margin-top: 80px;
+  }
+}
+.footer_container {
   position: relative;
   background-image: url('/img/footer/cookie.png');
   background-repeat: no-repeat;
@@ -14,7 +19,6 @@
   @include media(desktop) {
     background-position: left top;
     background-size: 162px;
-    margin-top: 80px;
   }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     @include media(mobile) {
