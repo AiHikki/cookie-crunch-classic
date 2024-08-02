@@ -1,7 +1,7 @@
 .footer_container {
   margin-top: 40px;
   position: relative;
-  background-image: url(../img/footer/cookie.png);
+  background-image: url('/img/footer/cookie.png');
   background-repeat: no-repeat;
   background-origin: content-box;
   background-size: 82px;
@@ -34,7 +34,7 @@
 }
 .footer_game_title {
   color: rgb(255, 255, 255);
-  font-family: DM Serif Display;
+  font-family: 'DM Serif Display', serif;
 
   @include font(16, 22);
   font-weight: 400;
@@ -78,10 +78,8 @@
 .footer_content_text {
   color: rgb(255, 255, 255);
 
-  font-family: DM Sans;
-  font-size: 14px;
+  @include font(14, 18);
   font-weight: 400;
-  line-height: 18px;
   letter-spacing: 0%;
   text-align: center;
   &:hover {
@@ -102,12 +100,7 @@
   }
 
   @include media(desktop) {
-    font-family: DM Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0%;
-    text-align: center;
+    @include font(16, 21);
   }
 }
 
@@ -160,7 +153,7 @@
   height: 30px;
   right: 61px;
   top: 14px;
-  background: url(../img/footer/saphire.png);
+  background: url('/img/footer/saphire.png');
   background-repeat: no-repeat;
   background-origin: content-box;
   background-size: 24px;
@@ -199,7 +192,7 @@
   height: 19px;
   right: 26px;
   top: 52px;
-  background: url(/img/footer/ruby.png);
+  background: url('/img/footer/ruby.png');
   background-repeat: no-repeat;
   background-origin: content-box;
   background-size: 19px;
@@ -238,7 +231,7 @@
   height: 22px;
   left: -1px;
   top: 81px;
-  background: url(/img/footer/amethyst.png);
+  background: url('/img/footer/amethyst.png');
   background-repeat: no-repeat;
   background-origin: content-box;
   background-size: 22px;
