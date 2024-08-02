@@ -4,21 +4,48 @@
   padding-top: 0;
   padding-bottom: 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background: url(../img/hero/phone_mobile.png) no-repeat right top 80px,
-    url(../img/hero/cookies_mobile.png) no-repeat right top 419px,
+  background: url('/img/hero/mobile/phone.png') no-repeat right -112px top 80px,
     linear-gradient(52.03deg, rgb(0, 0, 0) -0.757%, rgb(157, 36, 96) 100%);
-  @include media(desktop) {
-    background: url(../img/hero/hero-cookies.png) no-repeat right 154px top
-        134px,
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('/img/hero/mobile/phone@2x.png') no-repeat right -112px
+        top 80px,
       linear-gradient(52.03deg, rgb(0, 0, 0) -0.757%, rgb(157, 36, 96) 100%);
+  }
+
+  @include media(desktop) {
+    background: linear-gradient(
+      52.03deg,
+      rgb(0, 0, 0) -0.757%,
+      rgb(157, 36, 96) 100%
+    );
   }
 }
 
 .hero_container {
   padding-top: 212px;
   padding-bottom: 45px;
+
+  background-image: url('/img/hero/mobile/cookies.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 73%;
+  background-size: 97px;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('/img/hero/mobile/cookies@2x.png');
+  }
+
   @include media(desktop) {
     padding-top: 250px;
+    background-image: url('/img/hero/desktop/cookies.png');
+    background-size: 554px;
+    background-position-y: 36%;
+    background-position-x: 91%;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('/img/hero/desktop/cookies@2x.png');
+    }
   }
 }
 
