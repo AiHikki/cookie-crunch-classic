@@ -31,9 +31,8 @@
   display: none;
   gap: 30px;
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  @include font(18, 22);
   font-weight: 400;
-  line-height: 22px;
   letter-spacing: 0%;
   @include media(desktop) {
     display: flex;
@@ -70,10 +69,9 @@ a {
   border-radius: 4px;
 }
 .header_game_title {
-  font-family: DM Serif Display;
-  font-size: 20px;
+  font-family: 'DM Serif Display', serif;
+  @include font(20, 27);
   font-weight: 400;
-  line-height: 27px;
   letter-spacing: 0%;
   text-align: left;
   margin-bottom: 0;
@@ -139,9 +137,8 @@ a {
   z-index: 99;
   list-style: none;
   color: white;
-  font-size: 18px;
+  @include font(18, 23);
   font-weight: 400;
-  line-height: 23px;
   text-align: center;
   margin-top: 75px;
   @include media(desktop) {
