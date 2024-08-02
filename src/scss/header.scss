@@ -52,17 +52,14 @@
       height: 2px;
       background-color: #e9c001;
     }
-   
   }
   &:active {
     color: #e9c001;
   }
-  
 }
 a {
   &.active {
     color: #e9c001;
-    
   }
 }
 .nav_container {
@@ -110,7 +107,7 @@ a {
   cursor: pointer;
   outline: none;
   color: white;
-  
+
   @include media(desktop) {
     display: none;
   }
@@ -118,7 +115,6 @@ a {
 
 .hamburger svg {
   fill: white;
-  
 }
 .hamburger:active svg {
   fill: #e9c001;
@@ -134,7 +130,7 @@ a {
 
 .menu {
   position: fixed;
-  transform: translateY(-100%);
+  transform: translateY(-120%);
   transition: transform 0.2s;
   top: 0;
   left: 0;
