@@ -1,30 +1,3 @@
-// .about-section {
-//   background-image: url('/img/about/mobile/game.png');
-//   background-repeat: no-repeat;
-//   min-height: 825px;
-//   background-size: 321px;
-//   background-position-x: center;
-//   background-position-y: bottom;
-//   background-origin: content-box;
-
-//   @include media(desktop) {
-//     background-size: 733px;
-//     background-image: url('/img/about/desktop/game.png');
-//     min-height: 606px;
-//     background-position-x: 72px;
-//     background-position-y: center;
-//   }
-
-//   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-//     @include media(mobile) {
-//       background-image: url('/img/about/mobile/game@2x.png');
-//     }
-//     @include media(desktop) {
-//       background-image: url('/img/about/desktop/game@2x.png');
-//     }
-//   }
-// }
-
 .about-section {
   overflow-x: hidden;
 
@@ -47,18 +20,17 @@
 .about__container::before {
   content: '';
   position: absolute;
-  background-image: url('/img/about/blue-shadow.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  right: -38%;
-  top: -10%;
-  width: 210px;
-  height: 212px;
-  z-index: -1;
+  filter: blur(50px);
+  background: #3cccfa;
+  right: -5%;
+  top: 6%;
+  width: 50px;
+  height: 50px;
+  z-index: 9;
 
   @include media(desktop) {
-    left: -8%;
-    top: -36%;
+    left: -2%;
+    top: -28%;
   }
 }
 
@@ -85,17 +57,16 @@
 .about__img-container::before {
   content: '';
   position: absolute;
-  background-image: url('/img/about/green-shadow.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  right: -38%;
-  top: -4%;
-  width: 205px;
-  height: 208px;
+  filter: blur(50px);
+  background: #3bd20b;
+  right: -4%;
+  top: 16%;
+  width: 50px;
+  height: 50px;
   z-index: -1;
 
   @include media(desktop) {
-    right: -14%;
-    top: 24%;
+    right: -1%;
+    top: 38%;
   }
 }
