@@ -41,14 +41,6 @@
 }
 .nav_list li {
   :hover {
-    color: #e9c001;
-  }
-  // :focus {
-  //   color: #e9c001;
-  // }
-}
-a {
-  &.active {
     position: relative;
 
     &::after {
@@ -60,6 +52,17 @@ a {
       height: 2px;
       background-color: #e9c001;
     }
+   
+  }
+  &:active {
+    color: #e9c001;
+  }
+  
+}
+a {
+  &.active {
+    color: #e9c001;
+    
   }
 }
 .nav_container {
@@ -107,9 +110,7 @@ a {
   cursor: pointer;
   outline: none;
   color: white;
-  :focus {
-    color: #e9c001;
-  }
+  
   @include media(desktop) {
     display: none;
   }
@@ -117,6 +118,10 @@ a {
 
 .hamburger svg {
   fill: white;
+  
+}
+.hamburger:active svg {
+  fill: #e9c001;
 }
 .closeIcon {
   width: 38px;
