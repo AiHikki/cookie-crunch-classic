@@ -14,6 +14,14 @@
     background-position: left top;
     background-size: 162px;
   }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @include media(mobile) {
+      background-image: url('/img/footer/cookie@2x.png');
+    }
+    @include media(desktop) {
+      background-image: url('/img/footer/cookie@2x.png');
+    }
+  }
 }
 
 .footer_logo {
@@ -161,6 +169,26 @@
     right: 203px;
     top: 89px;
   }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background: url('/img/footer/saphire@2x.png');
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 61px;
+    top: 14px;
+
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 24px;
+    filter: blur(1px);
+    @include media(desktop) {
+      width: 62px;
+      height: 62px;
+      background-size: 62px;
+      right: 203px;
+      top: 89px;
+    }
+  }
 }
 .saphire_2 {
   position: absolute;
@@ -168,7 +196,7 @@
   height: 19px;
   right: 26px;
   top: 52px;
-  background: url(../img/footer/ruby.png);
+  background: url(/img/footer/ruby.png);
   background-repeat: no-repeat;
   background-origin: content-box;
   background-size: 19px;
@@ -180,6 +208,26 @@
     right: 343px;
     top: 47px;
   }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background: url('/img/footer/ruby@2x.png');
+    position: absolute;
+  width: 19px;
+  height: 19px;
+  right: 26px;
+  top: 52px;
+
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 19px;
+  filter: blur(1px);
+  @include media(desktop) {
+    width: 42px;
+    height: 42px;
+    background-size: 42px;
+    right: 343px;
+    top: 47px;
+  }
+  }
 }
 .saphire_3 {
   position: absolute;
@@ -187,7 +235,7 @@
   height: 22px;
   left: -1px;
   top: 81px;
-  background: url(../img/footer/amethyst.png);
+  background: url(/img/footer/amethyst.png);
   background-repeat: no-repeat;
   background-origin: content-box;
   background-size: 22px;
@@ -197,5 +245,24 @@
     height: 322px;
     background-size: 32px;
     top: 102px;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background: url('/img/footer/amethyst@2x.png');
+    width: 32px;
+    height: 322px;
+    background-size: 32px;
+    top: 102px;
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 22px;
+    filter: blur(1px);
+    @include media(desktop) {
+      width: 32px;
+      height: 322px;
+      background-size: 32px;
+      top: 102px;
+    }
   }
 }
