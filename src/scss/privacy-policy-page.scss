@@ -1,27 +1,55 @@
-.privacy_title {
-  color: rgb(221, 52, 136);
-  @include font(48, 66);
-}
-.small_title {
-  font-size: 40px;
-}
-.privacy_container {
-  padding-top: 166px;
-  padding-left: 72px;
-  padding-right: 668px;
-  padding-bottom: 112px;
-}
-.privacy-policy_section {
-  padding: 0;
-  margin-bottom: 48px;
-  width: 100%;
+.privacy-policy__content-container {
+  padding-top: 134px;
+  padding-bottom: 60px;
+
+  @include media(desktop) {
+    padding-top: 166px;
+    padding-bottom: 80px;
+  }
 }
 
-.privacy_text {
-  margin-top: 24px;
-  color: rgb(255, 255, 255);
-  @include font(20, 26);
+.privacy-policy__section_remove-pt {
+  padding-top: 0;
 }
-.privacy_acent {
+.privacy-policy__section_remove-pb {
+  padding-bottom: 0;
+}
+
+.privacy-policy__page-title {
+  font-weight: 400;
+  font-family: 'DM Serif Display', serif;
+  @include font(24, 33);
+  color: #dd3488;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    @include font(48, 66);
+    margin-bottom: 32px;
+  }
+}
+
+.privacy-policy__text {
+  @include font(16, 21);
+
+  @include media(desktop) {
+    @include font(20, 26);
+    max-width: 890px;
+  }
+}
+
+.privacy-policy__section-title {
+  font-weight: 400;
+  font-family: 'DM Serif Display', serif;
+  @include font(20, 27);
+  color: #dd3488;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    @include font(32, 44);
+    margin-bottom: 24px;
+  }
+}
+
+.privacy-policy__text_accent-color {
   color: #dd3488;
 }
