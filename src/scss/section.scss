@@ -5,9 +5,17 @@ section {
     padding-top: 80px;
     padding-bottom: 80px;
 
-    // ? Temporary
     max-width: 1440px;
     margin: 0 auto;
-    // ? Temporary
+  }
+}
+
+.privacy-policy__section,
+.terms__section {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  @include media(desktop) {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
