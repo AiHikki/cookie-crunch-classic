@@ -38,6 +38,8 @@
 
   @include media(desktop) {
     padding-top: 250px;
+  padding-bottom: 78px;
+
     background-image: url('/img/hero/desktop/cookies.png');
     background-size: 554px;
     background-position-y: 32%;

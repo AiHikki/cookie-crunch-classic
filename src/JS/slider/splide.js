@@ -6,7 +6,7 @@ new Splide('#slider1', {
   focus: 'center',
   autoplay: true,
   rewind: true,
-  speed: 600,
+  speed: 1400,
   interval: 2000,
   gap: 32,
   trimSpace: true,

@@ -1,9 +1,9 @@
-footer {
-  margin-top: 40px;
-  @include media(desktop) {
-    margin-top: 80px;
-  }
-}
+// footer {
+//   margin-top: 40px;
+//   @include media(desktop) {
+//     margin-top: 80px;
+//   }
+// }
 .footer_container {
   position: relative;
   background-image: url('/img/footer/cookie.png');
@@ -11,14 +11,17 @@ footer {
   background-origin: content-box;
   background-size: 82px;
   background-position: -10px -10px;
-
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 16px;
   @include media(desktop) {
     background-position: left top;
     background-size: 162px;
+  padding-bottom: 48px;
+
   }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     @include media(mobile) {
@@ -51,7 +54,7 @@ footer {
   }
 }
 .footer_content_container {
-  margin-top: 109px;
+  margin-top: 96px;
   display: flex;
   flex-direction: row;
   gap: 33px;
@@ -60,8 +63,7 @@ footer {
   max-width: 310px;
   @include media(desktop) {
     margin-top: 124px;
-    // margin-left: 87px;
-    // margin-right: 72px;
+   
     gap: 340px;
     max-width: 100%;
     width: 100%;
@@ -71,12 +73,13 @@ footer {
 
 .footer_line {
   position: absolute;
-  margin-top: 166px;
+  // margin-top: 80px;
+  top: 182px;
   width: 100%;
   height: 1px;
   background: linear-gradient(to right, #ff3cac, #562b7c, #2b86c5);
   @include media(desktop) {
-    margin-top: 199px;
+    top: 215px;
   }
 }
 .footer_content_text {
@@ -110,7 +113,6 @@ footer {
 
 .rights {
   margin-top: 80px;
-  margin-bottom: 16px;
   @include media(desktop) {
     margin: 0;
     margin-left: 50px;
@@ -134,20 +136,21 @@ footer {
   width: 113px;
   height: 135px;
   left: -34px;
-  top: 200px;
+  top: 350px;
   filter: blur(80px);
   background: rgb(157, 36, 96);
   @include media(desktop) {
-    bottom: 0px;
+    // bottom: 0px;
+    top: 280px;
   }
 }
 .elipse_2 {
   /* Ellipse 4 */
   position: absolute;
-  width: 85px;
+  width: 100px;
   height: 102px;
-  right: 50px;
-  top: -64px;
+  right: 0px;
+  top: -44px;
   filter: blur(80px);
   background: rgb(157, 36, 96);
 }
