@@ -6,11 +6,13 @@
   background-position-x: center;
   background-position-y: bottom;
   background-origin: content-box;
+  padding-top: 80px;
 
   @include media(desktop) {
     background-size: 1151px;
     background-image: url('/img/benefits/desktop/benefits.png');
     min-height: 1125px;
+    padding-top: 160px;
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
