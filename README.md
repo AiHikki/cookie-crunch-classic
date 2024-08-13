@@ -13,3 +13,9 @@ Cookie Crunch Classic is a single-page website designed to showcase the features
 - SCSS: Styling the webpage with modern CSS features.
 - JavaScript: Adding interactivity to the site.
 - Vite: A fast build tool for development.
+
+
+## Developed by
+- [@bhoretskyi](https://github.com/bhoretskyi)
+- [@AiHikki](https://github.com/AiHikki)
+
